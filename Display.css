@@ -1,4 +1,105 @@
-﻿body
-{
-    background-color: blue;
+﻿body {
+    background-color: ghostwhite;
+    font-family: Times New Roman;
+}
+
+header {
+    text-align: center;
+    font-family: Arial;
+    font-size: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial;
+    margin: 30px;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: Arial;
+    margin: 30px;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: Arial;
+    margin: 30px;
+    font-size: 22px;
+}
+
+p {
+    font-size: 20px;
+    margin: 30px;
+}
+
+.navbar {
+    z-index: 1;
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar a{
+	float: left;
+	font-size: 16px;  	
+	position: sticky;
+	text-align: center;
+	text-decoration: none;
+	padding: 16px 16px 16px 16px ;
+	color: blue;
+}
+
+.ref-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 15px;
+}
+
+.ref-container {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.headshot{
+    height: 300px;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 20px;
+}
+
+nav {
+    float: right;
+    width: 60%;
+    height: 300px;
+    padding: 20px;
+}
+
+nav ul {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+article {
+    float: left;
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
 }
